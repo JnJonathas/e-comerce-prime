@@ -1,0 +1,171 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  :root {
+  --cor-01:white;
+  --cor-02:#DEEFE7;
+  --cor-03:#002333;
+  --cor-04: lightskyblue;
+  --cor-05:#B4BEC9;
+}
+
+body{
+    background-color:var(--cor-01);
+    overflow-x: hidden;
+}
+
+.menu {
+  background-color:lightgray;
+  font-family: "Oswald", sans-serif;
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  font-size: 1.5em;
+  padding: 20px 0px 15px 40px;
+  margin: -15px;
+  cursor: pointer
+
+ 
+}
+
+#menu01:hover{
+  background-color: darkgrey;
+  text-decoration:underline;
+    transform: scale(1.2);
+  transition: 0.3s;
+}
+
+
+#menu02:hover{
+  background-color: darkgrey;
+   text-decoration:underline;
+     transform: scale(1.2);
+  transition: 0.3s;
+
+}
+#menu03:hover{
+  background-color: darkgrey;
+  text-decoration:underline;
+    transform: scale(1.2);
+  transition: 0.3s;
+}
+#menu04:hover{
+  background-color: darkgrey;
+  text-decoration:underline;
+    transform: scale(1.2);
+  transition: 0.3s;
+}
+.carrinho {
+  margin-left: auto;  /* empurra pro canto direito se usar flex */
+  margin-right: 30px; /* ou adiciona espaço da direita */
+
+}
+.carrinho:hover{
+  background-color: darkgrey;
+  text-decoration:underline;
+    transform: scale(1.2);
+  transition: 0.3s;
+}
+#img01{
+  margin-top: 15px;
+  margin: 15px 0px 0px -7px;
+}
+.caixa-busca {
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+ margin: -15px;
+ cursor: pointer;
+ padding-bottom: 150px;
+
+}
+#cx01:hover {
+   background-color: lightgrey;
+     transform: scale(1.05);
+  transition: 0.3s;
+}
+
+#bt01{
+   color:rgb(0, 0, 0); 
+   height: 40px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #9e9e9e;
+    background-color: #ffffff; 
+     cursor: pointer;
+}
+#bt01:hover{
+    background-color: lightgrey;
+    height: 45px;
+}
+.rp01{
+  list-style: none;
+  display: flex;
+  gap: 225px;
+
+}
+#blusa01{
+  padding: 0px 0px 0px 213px;
+}
+
+#nmrp01{
+  list-style: none;
+  display: flex;
+  gap: 210px;
+  padding: 0px 0px 0px 270px;
+  font-size: 2em;
+   font-family: "Sevillana", cursive;
+}
+#nmrp02:hover{
+  color: darkblue;
+  text-decoration: underline;
+  font-size: 1.1em;
+
+}
+#nmrp03:hover{
+  color: darkblue;
+  text-decoration: underline;
+  font-size: 1.1em;
+}
+#nmrp04:hover{
+  color: darkblue;
+  text-decoration: underline;
+  font-size: 1.1em;
+}
+#nmrp05:hover{
+  color: darkblue;
+  text-decoration: underline;
+  font-size: 1.1em;
+}
+#blusa01:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+#ferro01:hover {
+  background-color: lightslategrey;
+  transform: scale(1.1);
+    transition: 0.3s}
+#lavaseco01:hover {
+  transform: scale(1.1);
+  transition: 0.3s;}
+#drive01:hover {
+
+  transform: scale(1.1);
+  transition: 0.3s;}
+ #h2003{
+  word-spacing: 2px;
+  text-align: center;
+ }
+  #texto01{
+  font-family: 'Poppins', serif;
+  text-indent: 2px;
+  font-size: 1.3em;
+  position: absolute;
+  right: 0px;
+  width: 650px;
+  background-color: rgb(228, 227, 227);
+  padding: 35px;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: 1px 1px 1px 1px rgb(128, 127, 127);
+  word-spacing: 5px;
+}
