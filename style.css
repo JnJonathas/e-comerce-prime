@@ -2,21 +2,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+
   :root {
-  --cor-01:white;
-  --cor-02:#DEEFE7;
-  --cor-03:#002333;
-  --cor-04: lightskyblue;
-  --cor-05:#B4BEC9;
-}
+  --cor-01:rgb(255, 255, 255);
+  --cor-02:#f0f4f8;
+  --cor-03:darkblue;
+  --cor-04: rgb(229,229,229);
+  --cor-05:#EAF4FB;}
+
 
 body{
     background-color:var(--cor-01);
     overflow-x: hidden;
+    margin: 8px 8px 8px 8px;
+    
+}
+
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* pra ficar acima de tudo */
+  background-color: var(--cor-04); /* repita a cor de fundo aqui */
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1); /* opcional: sombra bonita */
 }
 
 .menu {
-  background-color:lightgray;
+  background-color:var(--cor-04);
   font-family: "Oswald", sans-serif;
   list-style: none;
   display: flex;
@@ -24,11 +40,9 @@ body{
   font-size: 1.5em;
   padding: 20px 0px 15px 40px;
   margin: -15px;
-  cursor: pointer
+  cursor: pointer;
 
- 
 }
-
 #menu01:hover{
   background-color: darkgrey;
   text-decoration:underline;
@@ -82,7 +96,7 @@ body{
 }
 #cx01:hover {
    background-color: lightgrey;
-     transform: scale(1.05);
+     transform: scale(1.02);
   transition: 0.3s;
 }
 
@@ -98,74 +112,568 @@ body{
     background-color: lightgrey;
     height: 45px;
 }
-.rp01{
+/*menu02*/
+.rp01 {
   list-style: none;
   display: flex;
-  gap: 225px;
+  justify-content: center;
+  gap: 170px;
+  padding: 0;
+  margin: 40px 0;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
 
-}
-#blusa01{
-  padding: 0px 0px 0px 213px;
+.rp01 li {
+  text-align: center;
 }
 
-#nmrp01{
-  list-style: none;
-  display: flex;
-  gap: 210px;
-  padding: 0px 0px 0px 270px;
-  font-size: 2em;
-   font-family: "Sevillana", cursive;
+.item-servico img {
+  width: 150px; /* ajuste o tamanho como quiser */
+  transition: transform 0.3s;
+  border-radius: 10px;
 }
-#nmrp02:hover{
-  color: darkblue;
-  text-decoration: underline;
-  font-size: 1.1em;
 
-}
-#nmrp03:hover{
-  color: darkblue;
-  text-decoration: underline;
-  font-size: 1.1em;
-}
-#nmrp04:hover{
-  color: darkblue;
-  text-decoration: underline;
-  font-size: 1.1em;
-}
-#nmrp05:hover{
-  color: darkblue;
-  text-decoration: underline;
-  font-size: 1.1em;
-}
-#blusa01:hover {
+.item-servico img:hover {
   transform: scale(1.1);
+}
+
+.item-servico p {
+   word-spacing: 2px;
+  margin-top: 10px;
+  font-size: 1.7em;
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.item-servico p:hover {
+  color: rgba(40, 40, 40, 0.7);
+  text-decoration: underline;
+  transform: scale(1.09);
+  transition: 0.3s ease;
+}
+
+
+   /*acabou*/
+
+ /* menu 03 produtos destaques */
+ #h201{
+   font-family: "Radley", serif;
+  font-size: 2.9em;
+  text-align: center;
+  padding-bottom: 10px;
+
+  background-color: var(--cor-04);
+   margin:auto;
+   width: 33%;
+   border-radius: 15px;
+ 
+  
+ }
+ #ul03{
+  cursor: pointer;
+  padding: 35px;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6em;
+  list-style: none;
+  display: flex;
+  gap: 135px;
+  margin-left: 190px;
+  cursor:pointer ;
+
+ }
+.destaque {
+  background-color: var(--cor-04);
+  border: 1.5px solid rgb(54, 54, 54);
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 180px; /* ajuste conforme suas imagens */
   transition: 0.3s;
 }
-#ferro01:hover {
-  background-color: lightslategrey;
-  transform: scale(1.1);
-    transition: 0.3s}
-#lavaseco01:hover {
-  transform: scale(1.1);
-  transition: 0.3s;}
-#drive01:hover {
 
-  transform: scale(1.1);
-  transition: 0.3s;}
- #h2003{
+.destaque img {
+  width: 100%; /* para se ajustar ao tamanho do li */
+  border-radius: 10px;
+}
+
+.desc {
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+
+#ul03 li:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+ /*Acabou*/
+ /*slide*/
+.carrosel-wrapper {
+  background-color: var(--cor-04);
+  height: 100%;
+    width: 900px; 
+    margin: 50px auto; 
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.carrosel {
+    
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: auto; 
+}
+
+.carrosel-track {
+  
+    display: flex;
+    transition: transform 0.5s ease-in-out; }
+
+.carrosel-img {
+   
+     width: auto;
+    height: auto; 
+    max-width: 100%;
+    display: block;
+    flex-shrink: 0; 
+    object-fit: contain;
+}
+
+
+ /*fim slide*/
+ /*pp*/
+ #pp01{
+  display: block;
+   text-align: center;
+   font-size: 2em;
+   font-family: "Radley", serif;
+   background-color: rgb(229, 229, 229);
+   margin: auto;
+   width: 33%;
+  border-radius: 15px ;
+  
+ }
+ 
+.ul04 {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 109px;
+  padding: 0;
+  margin: 45px 0px;
+}
+
+.promo01 {
+  background-color: rgb(229, 229, 229);
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 1px solid rgb(54, 54, 54);
+  transition: transform 0.3s ease;
+  width: 260px;
+  min-height: 340px; /* Espaço reservado para o texto aparecer */
+  position: relative;
+  overflow: hidden;
+}
+
+.promo01 img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.pdapromo {
+  font-family: "Oswald", sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.pdapromo.titulo {
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+.pdapromo.detalhe {
+  font-size: 1.4em;
+  margin-top: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  height: auto;
+  pointer-events: none; /* Evita cliques */
+}
+
+/* Hover */
+.promo01:hover {
+  transform: scale(1.05);
+}
+
+.promo01:hover .pdapromo.titulo {
+  transform: scale(1.05);
+}
+
+.promo01:hover .pdapromo.detalhe {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.promo01.ativo {
+  transform: scale(1.05);
+}
+
+.promo01.ativo .pdapromo.titulo {
+  transform: scale(1.05);
+}
+
+.promo01.ativo .pdapromo.detalhe {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+ /*acabou*/
+
+ #h202{
   word-spacing: 2px;
+  margin: 0;
   text-align: center;
  }
-  #texto01{
-  font-family: 'Poppins', serif;
+#qm01 {
+  display: flex;
+  justify-content: center;   /* Centraliza horizontalmente */
+  align-items: center;       /* Centraliza verticalmente */
+  transform: scale(0.7);     /* Reduz tudo em 30% */
+  transform-origin: center;  /* Garante que o centro seja a base do redimensionamento */
+  margin: auto;
+}
+
+#texto01 {
+  margin: auto;
+  font-family: "Radley", serif;
   text-indent: 2px;
-  font-size: 1.3em;
-  position: absolute;
-  right: 0px;
-  width: 650px;
+  font-size: 1.5em;
   background-color: rgb(228, 227, 227);
   padding: 35px;
   border-radius: 0px 10px 10px 0px;
   box-shadow: 1px 1px 1px 1px rgb(128, 127, 127);
   word-spacing: 5px;
+  text-align: center;
 }
+
+#qm01 picture img {
+  height: 645px;
+  border-radius: 10px 0px 0px 10px;
+}
+/**/
+#finalpg01{
+  padding-top: 35px;
+ font-family: "Radley", serif;
+  background-color: rgb(229, 229, 229);
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+#h1final{
+   text-align: center;
+   font-size: 3.5em;
+}
+#pfinal{
+   font-size: 1.6em;
+}
+#h2final{
+  font-size: 1.7em;
+}
+/**/
+#h2dvd{
+  font-size: 2.5em;
+}
+
+.faq-lista {
+  position: sticky;
+  top: 80px; /* ajuste para sua altura do header/menu */
+  max-height: calc(100vh - 80px); /* limita a altura da área fixa */
+  overflow-y: auto; /* permite scroll interno se passar da altura */
+  
+  /* Mantém outras configs */
+  column-count: 2;
+  column-gap: 40px;
+  list-style: none;
+  font-family: "Radley", serif;
+  margin: 30px auto;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+
+.faq-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  break-inside: avoid; /* para colunas, não quebrar o item no meio */
+}
+
+.faq-pergunta {
+  background: none;
+  border: none;
+  font-size: 1.3em;
+  width: 100%;
+  text-align: left;
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0;
+}
+
+.faq-toggle {
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: transform 0.2s ease;
+}
+
+.faq-resposta {
+  font-size: 1.5em;
+  margin-top: 10px;
+  display: none;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.faq-item.ativo .faq-resposta {
+  display: block;
+}
+
+.faq-item.ativo .faq-toggle {
+  transform: rotate(45deg);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+#footer{
+    text-align: center;
+     background-color: rgb(229, 229, 229);
+     margin-top: -30px;
+}
+
+@media screen and (max-width: 1224px) {
+  .menu {
+    gap: 30px;
+    font-size: 1.2em;
+    padding-left: 20px;
+      margin: 3px;
+    margin-left: 40px;
+  }
+  #h201{
+    width: 50%;
+  }
+  .rp01 {
+    gap: 50px;
+  }
+#ul03 {
+   
+    margin-left: 0;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .ul04 {
+    display: flex;
+    flex-direction: row; /* importante para manter em fileira */
+    /* permite quebrar se não couber */
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .ul04 > div {
+    width: 45%; /* ou algo como 48% se quiser dois por linha */
+    min-width: 200px; /* valor mínimo para não ficarem apertados */
+  }
+
+  #qm01 {
+    flex-direction: column;
+    transform: scale(1);
+  }
+
+  #qm01 picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+
+  #texto01 {
+    border-radius: 0 0 10px 10px;
+    padding: 20px; 
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1em;
+    gap: 20px;
+    margin: 3px;
+    margin-left: 40px;
+
+
+  }
+
+  .caixa-busca {
+    padding-bottom: 50px;
+  }
+
+  #cx01 {
+    width: 80%;
+    font-size: 1em;
+  }
+
+  .rp01 {
+    gap: 30px;
+  }
+   .item-servico img {
+    width: 100px;
+  }
+
+  #ul03 {
+    margin-left: 0;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    
+  }
+
+  #h201,#pp01 {
+    width: 80%;
+    font-size: 2em;
+  }
+
+  .carrosel-wrapper {
+    width: 95%;
+  }
+  #pp01{
+font-size: 1.5em;
+  }
+
+  .ul04 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+  }
+
+  .promo01 {
+    width: 45%; /* ou 48% para caber 2 por linha */
+    margin: 0 auto;
+  }
+
+  #qm01 {
+    flex-direction: column;
+    transform: scale(1);
+    margin: 0;
+  }
+
+  #texto01 {
+    font-size: 1.2em;
+    padding: 20px;
+    margin-bottom: 10%;
+  }
+
+  #finalpg01 {
+    padding: 20px;
+  }
+
+  #h1final {
+    font-size: 2em;
+  }
+
+  #pfinal, #h2final {
+    font-size: 1.2em;
+  }
+
+  .faq-lista {
+    column-count: 2;
+    padding: 0px 10px;
+    margin-right: 20px;
+  }
+
+  .faq-pergunta {
+    font-size: 1em;
+  }
+
+  .faq-resposta {
+    font-size: 1em;
+  }
+  .desc{
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu {
+    font-size: 1em;
+    gap: 50px;
+    
+  }
+  .rp01 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.rp01 li {
+  width: 45%;
+}
+  .item-servico p {
+    font-size: 1em;
+    
+  }
+  
+  .desc {
+    font-size: 1em;
+  }
+
+  
+  .pdapromo.titulo {
+    font-size: 2em;
+  }
+
+  .pdapromo.detalhe {
+    font-size: 1em;
+    column-count: 2;
+  }
+
+  #h202, #h2dvd {
+    font-size: 1.5em;
+  }
+
+  #footer {
+    font-size: 0.9em;
+  }
+  #ul03{
+    display: inline;
+    column-count: 2;
+    margin-left: 0;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;}
+
+.ul04 .pdapromo.titulo {
+  font-size: 1.2em;
+}
+
+}
+/* Isso mantém o layout original, mas adapta as margens, fontes, espaços e tamanhos para telas menores. */
