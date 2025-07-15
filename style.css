@@ -11,10 +11,21 @@
   --cor-03:darkblue;
   --cor-04: rgb(229,229,229);
   --cor-05:#EAF4FB;}
+*{
+  max-width: 100%;
+  text-decoration: none;
+  color: black;
 
+
+}
 
 body{
-    background-color:var(--cor-01);
+    background-color:lightgray;
+    background-image: url(img/img-fundo\ \(2\).png);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 100vh;
     overflow-x: hidden;
     margin: 8px 8px 8px 8px;
     
@@ -22,26 +33,37 @@ body{
 
 
 .menu-container {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999; /* pra ficar acima de tudo */
-  background-color: var(--cor-04); /* repita a cor de fundo aqui */
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.1); /* opcional: sombra bonita */
+  padding-top: 10px;
+  background-color: var(--cor-04); 
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1); 
+  text-decoration: none;
+  color: black;
+
+
 }
 
-.menu {
-  background-color:var(--cor-04);
+.menu{
+  width: 100%;
+  background-color: var(--cor-04); 
   font-family: "Oswald", sans-serif;
   list-style: none;
   display: flex;
-  gap: 60px;
+  gap: 50px;
   font-size: 1.5em;
   padding: 20px 0px 15px 40px;
   margin: -15px;
   cursor: pointer;
+   text-decoration: none;
+  color: black;
 
+}
+#menu00:hover{
+  text-decoration:underline;
+    transform: scale(1.4);
+  transition: 0.3s;
 }
 #menu01:hover{
   background-color: darkgrey;
@@ -70,74 +92,90 @@ body{
     transform: scale(1.2);
   transition: 0.3s;
 }
-.carrinho {
-  margin-left: auto;  /* empurra pro canto direito se usar flex */
-  margin-right: 30px; /* ou adiciona espaço da direita */
-
-}
-.carrinho:hover{
+#menu05:hover{
   background-color: darkgrey;
   text-decoration:underline;
     transform: scale(1.2);
   transition: 0.3s;
 }
+
+
 #img01{
-  margin-top: 15px;
+  margin-top: -30px;
   margin: 15px 0px 0px -7px;
 }
-.caixa-busca {
-  border-radius: 10px;
-  display: block;
+.h1pgcmc{
   text-align: center;
- margin: -15px;
- cursor: pointer;
- padding-bottom: 150px;
-
-}
-#cx01:hover {
-   background-color: lightgrey;
-     transform: scale(1.02);
-  transition: 0.3s;
-}
-
-#bt01{
-   color:rgb(0, 0, 0); 
-   height: 40px;
-    border-radius: 10px 10px 10px 10px;
-    border: 1px solid #9e9e9e;
-    background-color: #ffffff; 
-     cursor: pointer;
-}
-#bt01:hover{
-    background-color: lightgrey;
-    height: 45px;
+  font-size: 2.3em;
+  font-family:"Radley", sans-serif ;
+  background-color: var(--cor-04);
+  border-radius: 15px;
+  margin:auto;
+   width: 35%;
 }
 /*menu02*/
 .rp01 {
+ flex-wrap: wrap;
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 170px;
   padding: 0;
   margin: 40px 0;
-  flex-wrap: wrap;
   cursor: pointer;
+
 }
 
 .rp01 li {
   text-align: center;
+  border-radius: 15px;
+}
+.rp02 {
+ flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 170px;
+  padding: 0;
+  margin: 40px 0;
+  cursor: pointer;
+
 }
 
+.rp02 li {
+  text-align: center;
+  border-radius: 15px;
+}
+.item-servico{
+    border: 2px solid black;
+  border-radius: 15px;
+    padding: 15px;
+  background-color: #fff;
+}
+.item-servico1{
+    border: 2px solid black;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #fff;
+}
+.item-servico2{
+    border: 2px solid black;
+  border-radius: 15px;
+    padding: 15px;
+  background-color: #fff;
+}
+.item-servico3{
+    border: 2px solid black;
+  border-radius: 15px;
+    padding: 15px;
+  background-color: #fff;
+  height: 200px;
+}
 .item-servico img {
   width: 150px; /* ajuste o tamanho como quiser */
   transition: transform 0.3s;
   border-radius: 10px;
 }
-
-.item-servico img:hover {
-  transform: scale(1.1);
-}
-
 .item-servico p {
    word-spacing: 2px;
   margin-top: 10px;
@@ -152,6 +190,92 @@ body{
   color: rgba(40, 40, 40, 0.7);
   text-decoration: underline;
   transform: scale(1.09);
+  transition: 0.3s ease;
+}
+
+.item-servico1 img {
+  width: 150px; /* ajuste o tamanho como quiser */
+  transition: transform 0.3s;
+  border-radius: 10px;
+}
+
+.item-servico1 p {
+   word-spacing: 2px;
+  margin-top: 10px;
+  font-size: 1.7em;
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.item-servico1 p:hover {
+  color: rgba(40, 40, 40, 0.7);
+  text-decoration: underline;
+  transform: scale(1.09);
+  transition: 0.3s ease;
+}
+
+.item-servico2 img {
+  width: 150px; /* ajuste o tamanho como quiser */
+  transition: transform 0.3s;
+  border-radius: 10px;
+}
+
+
+.item-servico2 p {
+   word-spacing: 2px;
+  margin-top: 10px;
+  font-size: 1.7em;
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.item-servico2 p:hover {
+  color: rgba(40, 40, 40, 0.7);
+  text-decoration: underline;
+  transform: scale(1.09);
+  transition: 0.3s ease;
+}
+
+.item-servico3 img {
+  width: 150px; /* ajuste o tamanho como quiser */
+  transition: transform 0.3s;
+  border-radius: 10px;
+}
+
+.item-servico3 p {
+   word-spacing: 2px;
+  margin-top: 10px;
+  font-size: 1.7em;
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.item-servico3 p:hover {
+  color: rgba(40, 40, 40, 0.7);
+  text-decoration: underline;
+  transform: scale(1.09);
+  transition: 0.3s ease;
+}
+.item-servico:hover{
+  transform: scale(1.09);
+  transition: 0.3s ease;
+}
+.item-servico1:hover{
+  transform: scale(1.09);
+  transition: 0.3s ease;
+}
+.item-servico2:hover{
+  transform: scale(1.09);
+  transition: 0.3s ease;
+}
+.item-servico3:hover{ 
+   transform: scale(1.09);
   transition: 0.3s ease;
 }
 
@@ -173,14 +297,15 @@ body{
   
  }
  #ul03{
+  
   cursor: pointer;
   padding: 35px;
   font-family: "Oswald", sans-serif;
   font-size: 1.6em;
   list-style: none;
   display: flex;
-  gap: 135px;
-  margin-left: 190px;
+  gap: 165px;
+  margin-left: 510px;
   cursor:pointer ;
 
  }
@@ -193,21 +318,83 @@ body{
   width: 180px; /* ajuste conforme suas imagens */
   transition: 0.3s;
 }
+.destaque > .descricao{
+  display: none;
+}
 
 .destaque img {
   width: 100%; /* para se ajustar ao tamanho do li */
   border-radius: 10px;
 }
-
 .desc {
   font-size: 1.2em;
   margin-top: 15px;
 }
-
-#ul03 li:hover {
-  transform: scale(1.2);
-  transition: 0.3s;
+.descricao{
+  font-family: "Oswald", sans-serif;
+  font-size: 0.8em;
 }
+
+.destaque.ativo {
+  transform: scale(1.05);
+  z-index: 10;
+  position: relative;
+}
+
+.destaque.ativo > .descricao {
+  display: block;
+}
+
+ /*Acabou*/
+ /*tratamento manchas*/
+
+.h1tratamento{
+  text-align: center;
+  font-family: "Radley", serif;
+  font-size: 2.9em;
+  padding-bottom: 10px;
+  background-color: var(--cor-04);
+   margin:auto;
+   width: 33%;
+   border-radius: 15px;
+}
+.tratamento{
+padding-top: 25px;
+justify-content: center;
+ list-style: none; 
+ text-align: center;
+  display: flex;
+  gap: 65px;
+  cursor:pointer ;
+  
+}
+.mancha{
+ background-color: var(--cor-04);
+  border: 1.5px solid rgb(54, 54, 54);
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 1.5em;
+   font-family: "Radley", serif;
+     transition: 0.3s;
+     position: relative;
+}
+
+
+.descricao01 {
+  font-family: "Radley", serif;
+  font-size: 1.05em;
+  display: none;
+}
+
+.mancha.ativo {
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.mancha.ativo .descricao01 {
+  display: block;
+}
+
  /*Acabou*/
  /*slide*/
 .carrosel-wrapper {
@@ -246,6 +433,9 @@ body{
 
 
  /*fim slide*/
+ #uldaul{
+  display: flex;
+ }
  /*pp*/
  #pp01{
   display: block;
@@ -265,7 +455,8 @@ body{
   display: flex;
   justify-content: center;
   text-align: center;
-  gap: 109px;
+  width: 100%;
+  gap: 0px;
   padding: 0;
   margin: 45px 0px;
 }
@@ -283,6 +474,7 @@ body{
 }
 
 .promo01 img {
+  display: flex;
   width: 100%;
   border-radius: 10px;
   transition: transform 0.3s ease;
@@ -306,21 +498,7 @@ body{
   transition: opacity 0.3s ease;
   height: auto;
   pointer-events: none; /* Evita cliques */
-}
 
-/* Hover */
-.promo01:hover {
-  transform: scale(1.05);
-}
-
-.promo01:hover .pdapromo.titulo {
-  transform: scale(1.05);
-}
-
-.promo01:hover .pdapromo.detalhe {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
 }
 .promo01.ativo {
   transform: scale(1.05);
@@ -358,16 +536,18 @@ body{
   text-indent: 2px;
   font-size: 1.5em;
   background-color: rgb(228, 227, 227);
-  padding: 35px;
-  border-radius: 0px 10px 10px 0px;
+  padding: -35px 35px 35px 35px ;
+  border-radius: 10px 10px 10px 10px;
   box-shadow: 1px 1px 1px 1px rgb(128, 127, 127);
   word-spacing: 5px;
   text-align: center;
 }
 
-#qm01 picture img {
+#ft-lav picture img {
+  display: block;
+  margin: auto;
   height: 645px;
-  border-radius: 10px 0px 0px 10px;
+  margin-bottom: -50px;
 }
 /**/
 #finalpg01{
@@ -411,6 +591,7 @@ body{
 
 
 .faq-item {
+
   background-color: #fff;
   border-radius: 10px;
   padding: 15px 20px;
@@ -433,13 +614,14 @@ body{
 }
 
 .faq-toggle {
+  
   font-weight: bold;
   font-size: 1.5em;
   transition: transform 0.2s ease;
 }
 
 .faq-resposta {
-  font-size: 1.5em;
+  font-size: 1em;
   margin-top: 10px;
   display: none;
   animation: fadeIn 0.3s ease forwards;
@@ -461,219 +643,404 @@ body{
     text-align: center;
      background-color: rgb(229, 229, 229);
      margin-top: -30px;
+     text-decoration: none;
+     color: black;
 }
-
-@media screen and (max-width: 1224px) {
-  .menu {
-    gap: 30px;
-    font-size: 1.2em;
-    padding-left: 20px;
-      margin: 3px;
-    margin-left: 40px;
+@media screen and (max-width:1324px)
+ {
+  *{
+    max-width: 100%;
   }
-  #h201{
-    width: 50%;
-  }
-  .rp01 {
-    gap: 50px;
-  }
-#ul03 {
-   
-    margin-left: 0;
-    justify-content: center;
-    gap: 40px;
-  }
-
-  .ul04 {
-    display: flex;
-    flex-direction: row; /* importante para manter em fileira */
-    /* permite quebrar se não couber */
-    justify-content: center;
-    gap: 30px;
+  body{
     width: 100%;
+    height: 100vh;
   }
 
-  .ul04 > div {
-    width: 45%; /* ou algo como 48% se quiser dois por linha */
-    min-width: 200px; /* valor mínimo para não ficarem apertados */
-  }
+ #bt01{
+  height: 25px;
+ }
 
-  #qm01 {
-    flex-direction: column;
-    transform: scale(1);
-  }
+#bt01:hover{
+height: none;
+transform: none;
+ }
 
-  #qm01 picture img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px 10px 0 0;
-  }
-
-  #texto01 {
-    border-radius: 0 0 10px 10px;
-    padding: 20px; 
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .menu {
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 1em;
-    gap: 20px;
-    margin: 3px;
-    margin-left: 40px;
-
-
-  }
-
-  .caixa-busca {
-    padding-bottom: 50px;
-  }
-
-  #cx01 {
-    width: 80%;
-    font-size: 1em;
-  }
-
-  .rp01 {
-    gap: 30px;
-  }
-   .item-servico img {
-    width: 100px;
-  }
-
-  #ul03 {
-    margin-left: 0;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    
-  }
-
-  #h201,#pp01 {
-    width: 80%;
-    font-size: 2em;
-  }
-
-  .carrosel-wrapper {
-    width: 95%;
-  }
-  #pp01{
-font-size: 1.5em;
-  }
-
-  .ul04 {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    
-  }
-
-  .promo01 {
-    width: 45%; /* ou 48% para caber 2 por linha */
-    margin: 0 auto;
-  }
-
-  #qm01 {
-    flex-direction: column;
-    transform: scale(1);
-    margin: 0;
-  }
-
-  #texto01 {
-    font-size: 1.2em;
-    padding: 20px;
-    margin-bottom: 10%;
-  }
-
-  #finalpg01 {
-    padding: 20px;
-  }
-
-  #h1final {
-    font-size: 2em;
-  }
-
-  #pfinal, #h2final {
-    font-size: 1.2em;
-  }
-
-  .faq-lista {
-    column-count: 2;
-    padding: 0px 10px;
-    margin-right: 20px;
-  }
-
-  .faq-pergunta {
-    font-size: 1em;
-  }
-
-  .faq-resposta {
-    font-size: 1em;
-  }
-  .desc{
-    font-size: 0.7em;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .menu {
-    font-size: 1em;
-    gap: 50px;
-    
-  }
-  .rp01 {
-  display: flex;
-  flex-wrap: wrap;
+ .rp01{
+   margin-top: -95px;
+   display: flex;
+   padding: 5px;
   justify-content: center;
+  text-align: center;
+   font-size: 0.9em;
+   gap: 27px;
+ }
+ .rp01 li{
+  padding: 5px;
+  width: 35%;
+  text-align: center;
+ }
+ .rp01 img{
+  max-width: 75%;
+
+ }
+ .rp02{
+   margin-top: -25px;
+   display: flex;
+   padding: 5px;
+  justify-content: center;
+    gap: 25px;
+   font-size: 0.95em;
+  height: 250px;
+ }
+ .rp02 li{
+  padding: 10px;
+  width: 35%;
+  text-align: center;
+ }
+ .rp02 img{
+  max-width: 75%;
+
+ }
+ #h201{
+  font-size: 1.9em;
+  width: 50%;
+  padding: 10px;
+ }
+
+ #ul03{
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  column-count: 2;
+  width: auto;
+  gap: 45px;
+margin-left: 10px;
+
+ }
+
+.destaque {
+  justify-content: center;
+  width: 190px;
+}
+
+.destaque img {
+  justify-content: center;
+  width: 100%; 
+  border-radius: 10px;
+}
+
+.desc {
+  justify-content: center;
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+
+#ul03 li:hover {
+
+  transform: none;
+  transition: none;
+}
+.carrosel-wrapper{
+  width: 80%;
+  justify-content: center;
+}
+#pp01{
+   font-size: 1.5em;
+  width:50%;
+  padding: 0px;
+  text-align: center;
   gap: 10px;
-  padding: 0;
-  list-style: none;
+}
+#ft-lav{
+  justify-content: center;
+  margin-left: 10px;
+}
+}
+
+@media screen and (max-width:480px)
+{
+  *{
+      max-width: 100%;
+  }
+  body{
+    background-image: none;
+  }
+  .menu-container {
+     max-width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+  }
+  .menu {
+    text-align: center;
+  height: 5vh;
+  width: 100%;
+  max-width: 100%;
+  gap: 10px;
+   padding: 0;
+  margin-top: 5px;
+    margin-left: -15px;
+  margin-bottom: 5px;
+    font-size: 1em; /* Reduz o tamanho da fonte */
+  }
+
+  .menu li {
+    width: 100%;
+    text-align: center;
+  }
+  #menu00{
+   display: none;
+  }
+   #menu01{
+    margin-left: 10px;
+  }
+
+  #ft-001 img{
+  margin-top: 0px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.h1pgcmc{
+   width: 80%;
+ font-size: 1.3em;
+ margin-bottom: 130px;
+ margin-left: 30px;
+ text-align: center;
+ justify-content: center;
+
+}
+.rp01{
+   margin-top: -95px;
+   display: flex;
+   padding: 0;
+  justify-content: center;
+    gap: 10px;
+   font-size: 0.9em;
+  margin-right: 20px;
+ }
+ .rp01 li{
+  padding: 5px;
+  width: 45%;
+  text-align: center;
+ }
+ .rp01 img{
+  max-width: 75%;
+
+ }
+ .rp02{
+   margin-right: 20px;
+   margin-top: -25px;
+   display: flex;
+   padding: 0;
+  justify-content: center;
+    gap: 10px;
+   font-size: 0.9em;
+  height: 250px;
+ }
+ .rp02 li{
+  padding: 5px;
+  width: 45%;
+  text-align: center;
+ }
+ .rp02 img{
+  max-width: 75%;
+
+ }
+ .item-servico3{
+    padding-bottom: 7px;
+ }
+
+  #uldaul{
+    display: inline-block;
+    width:60%;
+    margin-left: 37px;
+  }
+#h201{
+  text-align: center;
+    font-size: 1.9em;
+    width: 80%;
+  margin-right: 40px;
+ }
+ #ul03{
+   margin-right: 200px;
+  display: flex;
+  column-count: 2;
+ 
+  width: 70%;
+  gap: 35px;
+ }
+
+.destaque > li{
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+  gap: 20px;
+  display: flex;
+}
+
+
+.destaque img {
+  justify-content: center;
+  width: 100%; 
+  border-radius: 10px;
+}
+
+.desc {
+  justify-content: center;
+  font-size: 0.9em;
+  margin-top: 15px;
+}
+
+#ul03 li:hover {
+
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+/**/
+.h1tratamento{
+     width: 80%;
+ font-size: 1.8em;
+ margin-left: 30px;
+ text-align: center;
+ justify-content: center;
+
+}
+.tratamento{
+  width: 75%;
+  text-align: center;
+  gap: 30px;
+}
+.mancha li{
+  gap: 1px;
+  display: flex;
+
+}
+.mancha img{
+   justify-content: center;
+  width: 100%; 
+  border-radius: 10px;
+}
+.descricao{
+    justify-content: center;
+  font-size: 0.5em;
+  margin-top: 15px;
+}
+.mancha h2{
+    justify-content: center;
+  font-size: 0.9em;
+  margin-top: 15px;
+}
+
+/**/
+.carrosel-wrapper{
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+   margin-right: 47px;
+}
+/**/
+#pp01{ 
+
+    font-size: 1.3em;
+    width: 80%;
+    margin: auto;
+}
+.ul04{
+  margin-top: 5px;
+}
+
+#ft-lav{
+    width: 62%;
+    height: 630px;
+   margin-left: 69px;
+
+}
+#qm01{
+   margin-right: 20px;
+  margin-top: -147px;
+}
+
+
+#faq-item li{
+  font-size: 0.9em;
+  justify-items: center;
+  justify-content: center;
+  color: black;
+}
+#faq-resposta p{ 
+  margin-right: 20px;
+}
+#finalpg01{
+  font-size: 0.7em;
+  text-align: center;
+
+}
+
+#menu00:hover{
+  transform: none;
+}
+#menu01:hover{
+ transform: none;
+}
+#menu02:hover{
+ transform: none;
+}
+#menu03:hover{
+ transform: none;
+}
+#menu04:hover{
+ transform: none;
+}
+.carrinho:hover{
+ transform: none;
+}
+#cx01:hover{
+ transform: none;
+}
+#bt01:hover{
+height: auto;
+}
+.item-servico p:hover {
+ transform: none;
+}
+.item-servico1 p:hover{
+ transform: none;
+}
+.item-servico2 p:hover{
+ transform: none;
+}
+.item-servico3 p:hover{
+ transform: none;
+}
+.item-servico:hover{
+ transform: none;
+}
+.item-servico1:hover{
+ transform: none;
+}
+.item-servico2:hover{
+ transform: none;
+}
+.item-servico3:hover{
+ transform: none;
+}
+#ul03 li:hover{
+ transform: none;
+}
+.promo01:hover {
+ transform: none;
+}
+.promo01:hover .pdapromo.titulo{
+ transform: none;
+}
+.promo01:hover .pdapromo.detalhe{
+ transform: none;  
+}
+header{
   width: 100%;
 }
 
-.rp01 li {
-  width: 45%;
 }
-  .item-servico p {
-    font-size: 1em;
-    
-  }
-  
-  .desc {
-    font-size: 1em;
-  }
-
-  
-  .pdapromo.titulo {
-    font-size: 2em;
-  }
-
-  .pdapromo.detalhe {
-    font-size: 1em;
-    column-count: 2;
-  }
-
-  #h202, #h2dvd {
-    font-size: 1.5em;
-  }
-
-  #footer {
-    font-size: 0.9em;
-  }
-  #ul03{
-    display: inline;
-    column-count: 2;
-    margin-left: 0;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;}
-
-.ul04 .pdapromo.titulo {
-  font-size: 1.2em;
-}
-
-}
-/* Isso mantém o layout original, mas adapta as margens, fontes, espaços e tamanhos para telas menores. */

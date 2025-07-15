@@ -1,0 +1,369 @@
+@charset "UTF-08";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+  :root {
+  --cor-01:rgb(255, 255, 255);
+  --cor-02:#f0f4f8;
+  --cor-03:darkblue;
+  --cor-04: rgb(229,229,229);
+  --cor-05:#EAF4FB;}
+*{
+  max-width: 100%;
+  text-decoration: none;
+  color: black;
+
+
+}
+
+body{
+    background-color:lightgray;
+    background-image: url(img/img-fundo\ \(2\).png);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 8px 8px 8px 8px;
+    
+}
+ 
+.menu > li{
+  text-decoration: none;
+  color: black;
+
+}
+
+.menu-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 10px;
+  background-color: var(--cor-04); 
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1); 
+
+}
+
+.menu{
+  width: 100%;
+  background-color: var(--cor-04); 
+  font-family: "Oswald", sans-serif;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  font-size: 1.5em;
+  padding: 20px 0px 15px 40px;
+  margin: -15px;
+  cursor: pointer;
+
+}
+#menu00:hover{
+  text-decoration:underline;
+    transform: scale(1.4);
+  transition: 0.3s;
+}
+#menu01:hover{
+  background-color: darkgrey;
+  text-decoration:underline;
+    transform: scale(1.2);
+  transition: 0.3s;
+}
+
+
+#menu02:hover{
+  background-color: darkgrey;
+   text-decoration:underline;
+     transform: scale(1.2);
+  transition: 0.3s;
+
+}
+#menu03:hover{
+  background-color: darkgrey;
+  text-decoration:underline;
+    transform: scale(1.2);
+  transition: 0.3s;
+}
+#menu04:hover{
+  background-color: darkgrey;
+  text-decoration:underline;
+    transform: scale(1.2);
+  transition: 0.3s;
+}
+#menu05:hover{
+  background-color: darkgrey;
+  text-decoration:underline;
+    transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.carrosel-wrapper {
+  margin-top: 15px;
+  height: 100%;
+    width: 100%; 
+    overflow: hidden;
+    position: relative;
+}
+
+.carrosel {
+    
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: auto; 
+}
+
+.carrosel-track {
+  
+    display: flex;
+    transition: transform 0.5s ease-in-out; }
+
+.carrosel-img {
+   
+     width: 100%;
+    height: auto; 
+    max-width: 100%;
+    display: block;
+    flex-shrink: 0; 
+    object-fit: contain;
+}
+
+.caixa-busca {
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+ margin: 17px;
+ cursor: pointer;
+
+
+}
+#cx01{
+  width: 400px; 
+  height: 35px;
+   border-radius: 10px;  
+   border: 1px solid #9e9e9e;
+  font-size: 1.2em;
+  cursor: pointer;
+  max-width: 480;
+}
+#cx01:hover {
+   background-color: lightgrey;
+     transform: scale(1.02);
+  transition: 0.3s;
+}
+
+#bt01{
+   color:rgb(0, 0, 0); 
+   height: 40px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #9e9e9e;
+    background-color: #ffffff; 
+     cursor: pointer;
+}
+#bt01:hover{
+    background-color: lightgrey;
+
+}
+
+/**/
+#botaoFiltro {
+  margin-top: -56px;
+  margin-left: 64%;
+  padding: 10px 20px;
+  font-size: 19px;
+  background-color: white;
+  color: black;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+#botaoFiltro:hover {
+  background-color: gray;
+}
+
+.opcoes-filtro {
+  margin-left: 63.5%;
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  padding: 5px 0;
+  border-radius: 6px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.opcoes-filtro div {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.opcoes-filtro div:hover {
+  background-color: #f0f0f0;
+}
+
+.opcoes-filtro.ativo {
+  display: block;
+} 
+/**/
+.lista-produtos {
+  margin-top: 120px;
+  margin-left: 25px ;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 35px;
+}
+
+.lista-produtos li {
+  padding-bottom: 25px;
+  background-color: white;
+  border: 2px solid rgb(103, 103, 103);
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+
+}
+.lista-produtos h2{
+  background-color: #c2c2c2;
+  border: 1px solid  lightgray;
+  border-radius: 5px;
+  font-variant: small-caps;
+  font-family: "Radley", serif;
+  font-size: 2.3em;
+}
+.roupas01 p{
+  font-family: "Roboto", sans-serif;
+  margin-top: -15px;
+  font-size: 1.6em;
+
+}
+.lista-produtos li p {
+  display: none;      /* texto escondido por padrão */
+  transition: opacity 0.3s ease;
+}
+
+.lista-produtos li.activo {
+  height: auto; /* deixa o li crescer conforme conteúdo */
+}
+
+.lista-produtos li.activo p {
+  display: block;  }
+
+.final00{
+  padding-bottom: 65px;
+  width: 100%;
+  background-color:lightgray;
+}
+.final{
+  padding-top: 35px;
+  font-family: "Radley", serif;
+  text-align: center;
+  font-size: 3.2em;
+}
+.final02{
+   font-family: "Radley", serif;
+  margin-top:-30px ;
+  text-align: center;
+  font-size: 1.8em;
+}
+.final03{
+  width: 27%;
+  border: 1px ;
+  border-radius: 5px;
+  background-color: white;
+   font-family: "Radley", serif;
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 2.6em;
+
+}
+@media screen and (max-width:480px){
+
+  *{
+      max-width: 100%;
+  }
+  body{
+    background-image: none;
+  }
+  .menu-container {
+     max-width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+  }
+  .menu {
+    text-align: center;
+  height: 5vh;
+  width: 100%;
+  max-width: 100%;
+  gap: 5px;
+   padding: 0;
+  margin-top: 5px;
+    margin-left: -15px;
+  margin-bottom: 5px;
+    font-size: 1em; /* Reduz o tamanho da fonte */
+  }
+
+  .menu li {
+    width: 100%;
+    text-align: center;
+  }
+  #menu00{
+   display: none;
+  }
+  #menu01{
+    margin-left: 10px;
+  }
+  .carrosel-wrapper{
+    margin-top: -5px;
+  }
+  #cx01{
+    width: 200px;
+    margin-left: 60px;
+  }
+  #bt01 {
+    margin-top: -300px;
+  }
+  #botaoFiltro{
+    padding-left: 13px;
+    margin-left: 10px;
+    font-size: 13px;
+    width: 80px;
+  }
+  .opcoes-filtro {
+  margin-left: 5%;
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  padding: 5px 0;
+  border-radius: 6px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+.roupas01{
+  width: 70%;
+  margin-left: 40px;
+  margin-top: -60px;
+}
+.roupas01 h2{
+  font-size: 1.5em;
+}
+.final03{
+  width: 80%;
+}
+} 
