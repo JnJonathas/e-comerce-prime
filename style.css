@@ -575,12 +575,9 @@ justify-content: center;
 
 .faq-lista {
   position: sticky;
-  top: 80px; /* ajuste para sua altura do header/menu */
-  max-height: calc(100vh - 80px); /* limita a altura da área fixa */
-  overflow-y: auto; /* permite scroll interno se passar da altura */
-  
-  /* Mantém outras configs */
-  column-count: 2;
+  top: 80px;
+  max-height: calc(100vh - 80px); 
+  overflow-y: auto; 
   column-gap: 40px;
   list-style: none;
   font-family: "Radley", serif;
