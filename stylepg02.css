@@ -356,14 +356,22 @@ body{
   z-index: 10;
 }
 .roupas01{
-  width: 70%;
-  margin-left: 40px;
+  width: 55%;
+  margin: auto;
   margin-top: -60px;
+  text-align: center;
 }
 .roupas01 h2{
   font-size: 1.5em;
 }
+.roupas01 p{
+  font-size: 1em;
+}
+.final00{
+  font-size: 70%;
+}
 .final03{
   width: 80%;
 }
+
 } 

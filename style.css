@@ -661,7 +661,14 @@ justify-content: center;
 height: none;
 transform: none;
  }
+.h1pgcmc{
+     width: 80%;
+ font-size: 1.7em;
+ margin-bottom: 130px;
 
+ text-align: center;
+ justify-content: center;
+}
  .rp01{
    margin-top: -95px;
    display: flex;
@@ -699,19 +706,17 @@ transform: none;
 
  }
  #h201{
-  font-size: 1.9em;
+  font-size: 2.3em;
   width: 50%;
   padding: 10px;
  }
 
  #ul03{
-  justify-content: center;
+  margin-left: 125px;
   display: flex;
-  margin: auto;
   column-count: 2;
-  width: auto;
-  gap: 45px;
-margin-left: 10px;
+  width: 85%;
+  gap: 55px;
 
  }
 
@@ -737,20 +742,60 @@ margin-left: 10px;
   transform: none;
   transition: none;
 }
+.h1tratamento{
+     width: 80%;
+ font-size: 2.8em;
+ text-align: center;
+ justify-content: center;
+
+}
+.tratamento{
+  margin-left: 55px;
+  width: 75%;
+  text-align: center;
+ display: flex;
+}
+.mancha li{
+  gap: 1px;
+  display: flex;
+
+}
+.mancha img{
+   justify-content: center;
+  width: 100%; 
+  border-radius: 10px;
+}
+.descricao{
+    justify-content: center;
+  font-size: 0.5em;
+  margin-top: 15px;
+}
+.mancha h2{
+    justify-content: center;
+  font-size: 0.9em;
+  margin-top: 15px;
+}
+
 .carrosel-wrapper{
   width: 80%;
   justify-content: center;
 }
 #pp01{
-   font-size: 1.5em;
+   font-size: 1.9em;
   width:50%;
   padding: 0px;
   text-align: center;
   gap: 10px;
 }
+
 #ft-lav{
   justify-content: center;
   margin-left: 10px;
+}
+#uldaul{
+ display: inline-block;
+    width:60%;
+    margin-left: 37px;
 }
 }
 
@@ -802,25 +847,29 @@ margin-left: 10px;
 }
 .h1pgcmc{
    width: 80%;
- font-size: 1.3em;
+ font-size: 1.1em;
  margin-bottom: 130px;
  margin-left: 30px;
  text-align: center;
  justify-content: center;
 
 }
+ .item-servico3{
+ height: 133px; 
+}
+
 .rp01{
    margin-top: -95px;
    display: flex;
    padding: 0;
   justify-content: center;
     gap: 10px;
-   font-size: 0.9em;
+   font-size: 0.7em;
   margin-right: 20px;
  }
  .rp01 li{
-  padding: 5px;
-  width: 45%;
+  padding: 4px;
+  width: 30%;
   text-align: center;
  }
  .rp01 img{
@@ -834,27 +883,18 @@ margin-left: 10px;
    padding: 0;
   justify-content: center;
     gap: 10px;
-   font-size: 0.9em;
-  height: 250px;
+   font-size: 0.7em;
+  height: 200px;
  }
  .rp02 li{
-  padding: 5px;
-  width: 45%;
+  padding: 4px;
+  width: 30%;
   text-align: center;
  }
  .rp02 img{
   max-width: 75%;
 
  }
- .item-servico3{
-    padding-bottom: 7px;
- }
-
-  #uldaul{
-    display: inline-block;
-    width:60%;
-    margin-left: 37px;
-  }
 #h201{
   text-align: center;
     font-size: 1.9em;
@@ -862,12 +902,12 @@ margin-left: 10px;
   margin-right: 40px;
  }
  #ul03{
-   margin-right: 200px;
+  margin: auto;
   display: flex;
   column-count: 2;
- 
-  width: 70%;
+  width: 60%;
   gap: 35px;
+  font-size: 1.3em;
  }
 
 .destaque > li{
@@ -881,7 +921,7 @@ margin-left: 10px;
 
 .destaque img {
   justify-content: center;
-  width: 100%; 
+
   border-radius: 10px;
 }
 
@@ -898,17 +938,19 @@ margin-left: 10px;
 }
 /**/
 .h1tratamento{
+  margin: auto;
      width: 80%;
- font-size: 1.8em;
- margin-left: 30px;
+ font-size: 1.9em;
  text-align: center;
  justify-content: center;
 
 }
 .tratamento{
+  padding-left: 0px;
+  padding-bottom: 25px;
+  margin: auto;
   width: 75%;
   text-align: center;
-  gap: 30px;
 }
 .mancha li{
   gap: 1px;
@@ -940,24 +982,37 @@ margin-left: 10px;
 }
 /**/
 #pp01{ 
-
     font-size: 1.3em;
     width: 80%;
     margin: auto;
 }
+  #uldaul{
+    padding-left: 0;
+    margin: auto;
+    display: block;
+    width:40%;
+    font-size: 0.9em;
+    padding-bottom: -25px;
+    padding-bottom: 0px;
+
+  }
 .ul04{
   margin-top: 5px;
 }
+/**/
 
 #ft-lav{
+  margin: auto;
     width: 62%;
     height: 630px;
-   margin-left: 69px;
+
 
 }
 #qm01{
-   margin-right: 20px;
-  margin-top: -147px;
+  margin-top: -175px;
+}
+#texto01{
+  padding: 0px 20px;
 }
 
 
